@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-# displays "Best School" 10 times using a while loop.
-# on the 9th iteration, displays "Hi" and "Best School".
+# Displays "Best School" 10 times using a while loop.
+# On the 9th iteration, displays "Hi" and "Best School".
+
 COUNTER=0
 while [ $COUNTER -lt 11 ]
 do
