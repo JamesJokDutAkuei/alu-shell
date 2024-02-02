@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
-# displays Best School 10 times.
+# Using a for loop to display "numbers" 10 times
 
-COUNTER=1
-while [ $COUNTER -lt 101 ]
+for ((num=1; num<=100; num++))
 do
-	if [ $((COUNTER%3)) -eq 0 ] && [ $((COUNTER%5)) -eq 0 ]; then
-        	echo "FizzBuzz"
-    	elif [ $((COUNTER%3)) -eq 0 ]; then
-        	echo "Fizz"
-    	elif [ $((COUNTER%5)) -eq 0 ]; then
-        	echo "Buzz"
-    	else
-        	echo "$COUNTER"
-    	fi
-    	 COUNTER+=1
+	if [ $((num % 3)) -eq 0 ] && [ $((num % 5)) -eq 0 ]; then
+		echo "FizzBuzz"
+	elif [ $((num % 3)) -eq 0 ]; then
+		echo "Fizz"
+	elif [ $((num % 5)) -eq 0 ]; then
+		echo "Buzz"
+	else
+		echo "$num"
+	fi
+
 done
